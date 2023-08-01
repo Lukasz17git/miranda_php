@@ -12,6 +12,8 @@ require_once 'posts/postsRouter.php';
 $url = $_SERVER['REQUEST_URI'];
 $method = $_SERVER['REQUEST_METHOD'];
 
+echo $url;
+
 use eftec\bladeone\BladeOne;
 
 $views = __DIR__ . '/views';
