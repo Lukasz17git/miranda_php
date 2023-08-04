@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
   RewriteEngine on
   RewriteRule ^$ view/ [L]
-  RewriteRule (.*) Views/$1 [L]
+  RewriteRule (.*) index.php [L]
 </IfModule>
