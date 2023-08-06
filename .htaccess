@@ -1,5 +1,8 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine on
-  RewriteRule ^$ view/ [L]
-  RewriteRule (.*) index.php [L]
-</IfModule>
+RewriteEngine On
+RewriteBase /
+
+# Allow access to the specified routes and files
+RewriteRule ^(contact|rooms|about|)$ - [L]
+
+# For any other request, redirect to the index.php file
+RewriteRule ^(.*)$ index.php [L]
